@@ -26,7 +26,7 @@ console.log(username)
       <Route path='/wishes' element={<Wishes send={username}/>}/>
      </Routes>
      </BrowserRouter>
-     <div style={{margin:"1rem",}}>\
+     <div style={{margin:"1rem",}}>
       <Nav.Link href="https://www.instagram.com/dheerajnandiraju/">
      <FaInstagram size={40} color='#959595'/>
      </Nav.Link>
