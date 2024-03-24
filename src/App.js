@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './app.css'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Signin from './components/signin';
+import { Navbar, Nav } from "react-bootstrap";
+import { useState } from 'react';
+import Wishes from './components/wishes';
+import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 function App() {
+const[username,setusername]=useState('')
+
+const show=(data)=>{
+  setusername(data)
+}
+console.log(username)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="center display">
+    <h2 className='text'>Developed by Dheeraj Nandiraju</h2>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/' element={<Signin names={show} />}/>
+      <Route path='/wishes' element={<Wishes send={username}/>}/>
+     </Routes>
+     </BrowserRouter>
+     <div style={{margin:"1rem",}}>\
+      <Nav.Link href="https://www.instagram.com/dheerajnandiraju/">
+     <FaInstagram size={40} color='#959595'/>
+     </Nav.Link>
+     
+     <Nav.Link style={{marginLeft:"1rem"}} href="https://www.linkedin.com/in/dheeraj-nandiraju/">
+     <FaLinkedin size={40} color='#959595'/>
+     </Nav.Link>
+    
+     </div>
     </div>
   );
 }
