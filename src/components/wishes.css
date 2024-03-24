@@ -1,7 +1,7 @@
 .name{
     font-size: xxx-large;
     background: -webkit-linear-gradient(360deg, rgba(0,168,248,1) 0%, rgba(0,62,243,1) 25%, rgba(68,0,255,1) 35%, rgba(123,0,255,1) 46%, rgba(158,11,255,1) 53%, rgba(255,0,222,1) 64%, rgba(255,0,0,1) 85%);
-    -webkit-background-clip: text;
+   background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .center{
