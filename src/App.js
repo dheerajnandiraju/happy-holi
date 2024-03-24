@@ -8,7 +8,7 @@ import { useState } from 'react';
 import Wishes from './components/wishes';
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import './app.css'
+import './App.css'
 function App() {
 const[username,setusername]=useState('')
 
