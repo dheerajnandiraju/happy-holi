@@ -30,11 +30,10 @@ console.log(username)
       <Nav.Link href="https://www.instagram.com/dheerajnandiraju/">
      <FaInstagram size={40} color='#959595'/>
      </Nav.Link>
-     <div >
      <Nav.Link style={{marginLeft:"1rem"}} href="https://www.linkedin.com/in/dheeraj-nandiraju/">
      <FaLinkedin size={40} color='#959595'/>
      </Nav.Link>
-     </div>
+    
      </div>
     </div>
   );
