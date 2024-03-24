@@ -1,5 +1,5 @@
 
-import './app.css'
+
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Signin from './components/signin';
@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Wishes from './components/wishes';
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import './app.css'
 function App() {
 const[username,setusername]=useState('')
 
@@ -29,11 +30,11 @@ console.log(username)
       <Nav.Link href="https://www.instagram.com/dheerajnandiraju/">
      <FaInstagram size={40} color='#959595'/>
      </Nav.Link>
-     
+     <div >
      <Nav.Link style={{marginLeft:"1rem"}} href="https://www.linkedin.com/in/dheeraj-nandiraju/">
      <FaLinkedin size={40} color='#959595'/>
      </Nav.Link>
-    
+     </div>
      </div>
     </div>
   );
